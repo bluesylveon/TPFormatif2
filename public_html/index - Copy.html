@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.css" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="css/styles.css">            
+        
+        <script src="bootstrap/jquery-3.3.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        
+        <header class="container">
+            <h1>Questionnaire simple</h1>
+            <p>Toutes les questions sont obligatoires</p>
+            <p id="commencer">Pour voir le questionnaire, cliquez sur le bonton COMMENCER</p>
+            <p>Lisez bien toutes les questions</p>
+            <button id="boutton" class="btn btn-info">COMMENCER</button>
+        </header>
+        
+        <form id="formulaire" method="get" action="resultats.html">
+            <label for="q1">1 - Supposons qu'il n'y a pas de précédence avec les opérateurs arithmétiques et que seule l'associativité de gauche à droite s'applique. Quelle sera le résultat de l'expression <em>5 - 3 * 4 / 2 + 6</em>?</label>
+            <span>Réponse: </span> <input type="number" id="q1" required min="1" max="15">
+            <span id='q1Faux'></span>
+            
+            <label for="q2">2 - Dans quelle balise HTML tout le contenu visible d'une page Web doit être mis?</label>
+            <span>Réponse: </span><input type="text" id="q2" required>
+            <span id='q2Faux'></span>
+            
+            <label for="q3">3 - Dans quel événement est déclenché, lorsqu'on sélectionne du texte ou un élément HTML sur une page web?</label>
+            <span>Réponse: </span><input type="text" id="q3" required>
+            <span id='q3Faux'></span>
+            
+            <label for="q4">4 - En JavaScript, quelle est la portée d'une variable déclarée dans une fonction?</label>
+            <span>Réponse: </span><input type="text" id="q4" required>
+            <span id='q4Faux'></span>
+            
+            <label for="q5">5 - En JavaScript, quel opérateur est utilisé pour déterminer si 2 variables sont du même type et ont la même valeur?</label>
+            <span>Réponse: </span><input type="text" id="q5" required>
+            <span id='q5Faux'></span>
+            
+            <input id='envoyer' class="btn btn-info" type="submit" value="Envoyer">
+        </form>
+        <script src="javascript/javascript.js"></script>
+    </body>
+</html>

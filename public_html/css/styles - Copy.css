@@ -1,0 +1,24 @@
+/* 
+Created on : Mar 18, 2019, 10:48:57 AM
+Author     : Isadora Tremblay
+*/
+header{
+    text-align: center;
+}
+label{
+    display:block;
+    padding-top: 1.5%;
+}
+input{
+    width: 10em;   
+}
+input[type="submit"]{
+    display:block;
+    margin:auto;
+}
+span{
+    font-weight: bold;
+}
+q1Faux,q2Faux,q3Faux,q4Faux,q5Faux,em {
+    color:red;   
+}
